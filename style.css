@@ -1,0 +1,150 @@
+img{
+ width: 50%;
+} 
+body{
+  font-family: 'poppins',sans-serif;
+  font-weight: 700;
+  background-color: rgba(158, 154, 154, 0.486);
+}
+main{
+   /* to put the main in the center of the body*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main-content{
+  width: 600px;
+  height:500px ;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  /* this creates a border radius at the bottom */
+  border-bottom-right-radius:200px ;
+  padding: 40px;
+}
+ /* this is the box that have the day, month and years */
+.box-input{
+  display: flex;
+  flex-direction: row;
+   /* for width to occupy full space */
+  width:100% ;
+  justify-content:space-around ;
+  /* color:hsl(0, 1%, 44%) ; */
+  text-transform: uppercase;
+  gap: 20px;
+}
+.single-input{
+  display: flex;
+  flex-direction: column;
+}
+ /* this is for the day month and year */
+.single-input label{
+  letter-spacing: 0.2rem; 
+  font-size:13px ;
+  margin-bottom: 10px;
+}
+/* styling the inputs */
+.single-input input{
+width: 150px;
+padding: 10px;
+padding-left: 20px;
+font-size: 32px;
+font-weight: 700;
+border-radius: 8px;
+border: 1px solid hsl(0, 0%,86%);
+color:hsl(0, 0%, 8%) ;
+}
+.single-input input:focus{
+  border: 2px solid hsl(259, 100%, 8%);
+  outline:none;
+}
+.error{
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  color: red;
+  text-transform: none;
+  margin-top: 10px;
+}
+
+.button-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+.line{
+  width: 100%;
+  border-bottom: 1px solid hsl(0, 0%, 86%);
+}
+button{
+  padding: 20px; 
+  border: none;
+  border-radius: 10%; 
+  background-color: white;
+  cursor: pointer;
+  transition:0.3s ease ;
+}
+button:hover{
+  background-color: rgb(158, 32, 158);
+} 
+.result-view{
+  font-size: 68px;
+  font-weight: 800;
+  font-style: italic;
+  margin-bottom: -20px;
+  color: hsl(0, 0%, 8%);
+}
+span{
+color: rgb(158, 32, 158); ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media(max-width:600px){
+  .main-conent{
+    width:350px;
+    height: 430px;
+    padding: 30px;
+    border-top-right-radius: 100px;
+  }
+  .box-inputs{
+    width: 100%;
+  }
+  .single-input input{
+    width: 90px;
+    font-size:20px ;
+    padding: 15px;
+  }
+  .error{
+    width:90px;
+  }
+  .button-content{
+    margin-top:20px;
+  }
+  button img{
+    width:45px;
+  }
+  .line-sec{
+    border: 1px solid hsl(0, 0%, 86%);
+  }
+} */
